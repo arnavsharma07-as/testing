@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Linking bootstrap icons css file-->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Writing our own CSS Code-->
+    <style text="text/css">
+      span {
+        margin-right: 8px;
+      }
+      header {
+        margin-top: 35px;
+        font-size: 15px;
+        font-family: Arial;
+        /* Adjusting the elemements : inline*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      /* header{
+        display: flex;
+        justify-content: space-between;
+      }
+      */
+      .brand-title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .count {
+        background-color: red;
+        color: white;
+        width: 25px;
+        height: 25px;
+
+        /* Adjusting the dimension for span element*/
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-size: 18px;
+      }
+      #data {
+        margin-right: 15px;
+        font-size: 25px;
+      }
+      #icon {
+        margin-right: 5px;
+      }
+      article {
+        display: block;
+      }
+      .flash-sale {
+        margin-top: 30px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+      .bi-lightning-fill {
+        color: goldenrod;
+      }
+      footer {
+        background-color: black;
+        color: white;
+
+        font-family: Arial;
+        padding: 10px;
+        /*Arranging the columns through grid style*/
+
+        display: grid;
+
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+      }
+
+      .footer-brand-name {
+        font-weight: bold;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .data ~ span {
+        display: block;
+        font-size: 15px;
+        color: white;
+        padding: 2px;
+      }
+
+      aside span {
+        margin-right: 8px;
+      }
+      .data div {
+        padding-bottom: 10px;
+      }
+
+      section {
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="brand-title">
+        <span>Shopper.</span>
+      </div>
+      <div id="data">
+        <span>Home</span>
+        <span>Catalog</span>
+        <span>Shop</span>
+        <span>Pages</span>
+        <span>Blog</span>
+        <span>Docs</span>
+      </div>
+
+      <div id="icons">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart3">
+          <span class="count">2</span>
+        </span>
+      </div>
+    </header>
+
+    <div class="flash-sale">
+      <marquee>
+        <!-- This element is make text move from right to left-->
+        <article>
+          <span class="bi bi-lightning-fill"></span>
+          <span>Happy Holiday Deals on Everything</span>
+          <span class="bi bi-lightning-fill"></span>
+        </article>
+      </marquee>
+    </div>
+
+    <section></section>
+    <footer>
+      <div>
+        <div class="footer-brand-name">Shopper</div>
+        <aside>
+          <span class="bi bi-facebook"> </span>
+          <span class="bi bi-youtube"> </span>
+          <span class="bi bi-instagram"> </span>
+          <span class="bi bi-twitter"> </span>
+        </aside>
+      </div>
+
+      <div>
+        <div class="data">SUPPORT</div>
+        <span>Contact Us</span>
+        <span>FAQs</span>
+        <span>Size Guide</span>
+        <span>Shipping & returns</span>
+      </div>
+
+      <div>
+        <div class="data">Shop</div>
+        <span>Men's Shopping</span>
+        <span>Women's Shopping</span>
+        <span>Kids' Shopping</span>
+        <span>Discounts</span>
+      </div>
+
+      <div>
+        <div class="data">Company</div>
+        <span>Our Story</span>
+        <span>Careers</span>
+        <span>Terms & Conditions</span>
+        <span>Privacy & Cookie policy</span>
+      </div>
+      <div>
+        <div class="data">Contact</div>
+        <span>1-202-555-0105</span>
+        <span>1-202-555-0106</span>
+        <span>help@shopper.com</span>
+      </div>
+    </footer>
+  </body>
+</html>
